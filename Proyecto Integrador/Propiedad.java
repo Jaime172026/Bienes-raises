@@ -20,16 +20,6 @@ public class Propiedad {
         this.estado = estado;
     }
 
-  
-    public void mostrarInformacion() {
-        System.out.println("Ficha Propiedad -> Título: " + titulo + " | Tipo: " + tipo + " | Ubicación: " + ubicacion + " | Precio: $" + precio);
-    }
-
-    public void actualizarEstado(String nuevoEstado) {
-        this.estado = nuevoEstado;
-        System.out.println("Actualización del Sistema: La propiedad '" + this.titulo + "' ha cambiado su estado a " + this.estado + ".");
-    }
-
    
     public int getIdPropiedad() {
         return idPropiedad;
@@ -85,5 +75,13 @@ public class Propiedad {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+     public void mostrarInformacion() {
+        System.out.println("Ficha Propiedad -> Título: " + titulo + " | Tipo: " + tipo + " | Ubicación: " + ubicacion + " | Precio: $" + precio);
+    }
+
+    public void actualizarEstado(String nuevoEstado) {
+        this.estado = nuevoEstado;
+        System.out.println("Actualización del Sistema: La propiedad '" + this.titulo + "' ha cambiado su estado a " + this.estado + ".");
     }
 }

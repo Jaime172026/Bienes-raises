@@ -21,7 +21,7 @@ public class Cliente {
 
     
     public void registrarse() {
-        System.out.println("El cliente " + this.nombre + " " + this.apellido + " ha sido registrado exitosamente en la plataforma digital.");
+        System.out.println("EL CLIENTE" + this.nombre + " " + this.apellido + " ha sido registrado exitosamente en la plataforma digital.");
     }
 
     
