@@ -3,7 +3,6 @@ public class Venta {
     private String fechaVenta;
     private double monto;
     private String estado;
-
    
     public Venta() {}
 

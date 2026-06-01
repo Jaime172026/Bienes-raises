@@ -19,21 +19,6 @@ public class EvaluacionMadurezDigital {
         this.puntajeFirmaElectronica = puntajeFirmaElectronica;
     }
 
-    public double calcularPromedio() {
-        return (puntajeCRM + puntajeMarketingDigital + puntajeAutomatizacion + puntajeFirmaElectronica) / 4;
-    }
-
-    public String obtenerNivelMadurezDigital() {
-        double promedio = calcularPromedio();
-        if (promedio >= 80) {
-            return "Alto - Nivel PropTech Avanzado (Procesos optimizados digitalmente)";
-        } else if (promedio >= 50) {
-            return "Medio - En proceso de Transformación (Herramientas activas, falta integración)";
-        } else {
-            return "Bajo - Tradicional (Requiere Digitalización Urgente)";
-        }
-    }
-
 
     public int getIdEvaluacion() {
         return idEvaluacion;
@@ -81,5 +66,20 @@ public class EvaluacionMadurezDigital {
 
     public void setPuntajeFirmaElectronica(double puntajeFirmaElectronica) {
         this.puntajeFirmaElectronica = puntajeFirmaElectronica;
+    }
+
+    public double calcularPromedio() {
+        return (puntajeCRM + puntajeMarketingDigital + puntajeAutomatizacion + puntajeFirmaElectronica) / 4;
+    }
+
+    public String obtenerNivelMadurezDigital() {
+        double promedio = calcularPromedio();
+        if (promedio >= 80) {
+            return "Alto - Nivel PropTech Avanzado (Procesos optimizados digitalmente)";
+        } else if (promedio >= 50) {
+            return "Medio - En proceso de Transformación (Herramientas activas, falta integración)";
+        } else {
+            return "Bajo - Tradicional (Requiere Digitalización Urgente)";
+        }
     }
 }

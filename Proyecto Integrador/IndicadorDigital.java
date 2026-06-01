@@ -22,13 +22,6 @@ public class IndicadorDigital {
         return valorActual >= valorObjetivo;
     }
 
-
-    public void mostrarEstadoIndicador() {
-        String estado = estaCumplido() ? "CUMPLIDO" : "NO CUMPLIDO";
-        System.out.println("Métrica -> KPI: " + nombre + " | Área: " + areaRelacionada + " | Estado: [" + estado + "] (" + valorActual + "% / Objetivo: " + valorObjetivo + "%)");
-    }
-
-
     public int getIdIndicador() {
         return idIndicador;
     }
@@ -76,4 +69,10 @@ public class IndicadorDigital {
     public void setAreaRelacionada(String areaRelacionada) {
         this.areaRelacionada = areaRelacionada;
     }
+
+    public void mostrarEstadoIndicador() {
+        String estado = estaCumplido() ? "CUMPLIDO" : "NO CUMPLIDO";
+        System.out.println("Métrica -> KPI: " + nombre + " | Área: " + areaRelacionada + " | Estado: [" + estado + "] (" + valorActual + "% / Objetivo: " + valorObjetivo + "%)");
+    }
+
 }

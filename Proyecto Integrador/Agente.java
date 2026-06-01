@@ -17,10 +17,6 @@ public class Agente {
         this.especialidad = especialidad;
     }
 
-    
-    public void gestionarCliente(Cliente cliente) {
-        System.out.println("Asignación: El agente " + this.nombre + " (Especialidad: " + this.especialidad + ") ha iniciado el seguimiento del cliente " + cliente.getNombre() + " " + cliente.getApellido() + ".");
-    }
 
     
     public int getIdAgente() {
@@ -61,5 +57,9 @@ public class Agente {
 
     public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
+    }
+    
+     public void gestionarCliente(Cliente cliente) {
+        System.out.println("Asignación: El agente " + this.nombre + " (Especialidad: " + this.especialidad + ") ha iniciado el seguimiento del cliente " + cliente.getNombre() + " " + cliente.getApellido() + ".");
     }
 }

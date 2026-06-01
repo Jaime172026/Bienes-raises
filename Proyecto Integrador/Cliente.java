@@ -20,11 +20,6 @@ public class Cliente {
     }
 
     
-    public void registrarse() {
-        System.out.println("EL CLIENTE" + this.nombre + " " + this.apellido + " ha sido registrado exitosamente en la plataforma digital.");
-    }
-
-    
     public int getIdCliente() {
         return idCliente;
     }
@@ -71,5 +66,9 @@ public class Cliente {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    public void registrarse() {
+        System.out.println("EL CLIENTE" + this.nombre + " " + this.apellido + " ha sido registrado exitosamente en la plataforma digital.");
     }
 }

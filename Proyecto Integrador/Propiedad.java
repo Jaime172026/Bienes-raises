@@ -20,7 +20,6 @@ public class Propiedad {
         this.estado = estado;
     }
 
-   
     public int getIdPropiedad() {
         return idPropiedad;
     }
@@ -71,7 +70,7 @@ public class Propiedad {
 
     public String getEstado() {
         return estado;
-    }
+    } 
 
     public void setEstado(String estado) {
         this.estado = estado;
