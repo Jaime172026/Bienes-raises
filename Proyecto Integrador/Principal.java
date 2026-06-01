@@ -44,6 +44,6 @@ public class Principal {
         System.out.println("--- [FASE 3: PANEL DE CONTROL DE INDICADORES (DASHBOARD)] ---");
         kpi1.mostrarEstadoIndicador();
         kpi2.mostrarEstadoIndicador();
-        System.out.println("=====================================================================");
+        System.out.println("====================================================================");
     }
 }
